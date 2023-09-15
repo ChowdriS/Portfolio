@@ -33,11 +33,16 @@ export const TwitterIcon = ({ className, ...rest }) => (
     />
   </svg>
 );
-// #0A66C2
 
 
-const LeetcodeIcon = (props) => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
+export const LeetcodeIcon = ({ className, ...rest }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" 
+  width="1em"
+  height="1em" 
+  viewBox="0 0 24 24" 
+  {...rest}
+  className={`w-full h-auto ${className}`}
+  >
     <path
       fill="#B3B1B0"
       d="M22 14.355c0-.742-.564-1.345-1.26-1.345H10.676c-.696 0-1.26.604-1.26 1.345 0 .742.564 1.346 1.26 1.346H20.74c.696 0 1.26-.603 1.26-1.346z"
