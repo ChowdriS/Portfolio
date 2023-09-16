@@ -29,7 +29,7 @@ const Navbar = () => {
             <CustomLink href="/articles" title="Articles" className='ml-4'/>
         </nav>
         <nav className='flex items-center justify-center flex-wrap'>
-        <motion.a href="/" target={"_blank"} whileHover={{y:-2}} whileTap={{scale:2}} className='w-6 mr-3' ><TwitterIcon/></motion.a>
+        <motion.a href="https://twitter.com/itz_me_chow3" target={"_blank"} whileHover={{y:-2}} whileTap={{scale:2}} className='w-6 mr-3' ><TwitterIcon/></motion.a>
         <motion.a href="https://leetcode.com/ChowdriSakthivel/" target={"_blank"} whileHover={{y:-2}} whileTap={{scale:2}} className='w-6 mx-3' ><LeetcodeIcon/></motion.a>
         <motion.a href="https://github.com/ChowdriS/" target={"_blank"} whileHover={{y:-2}} whileTap={{scale:2}} className='w-6 mx-3'><GithubIcon/></motion.a>
         <motion.a href="https://www.linkedin.com/in/chowdri-sakthivel/" target={"_blank"} whileHover={{y:-2}} whileTap={{scale:2}} className='w-6 ml-3'><LinkedInIcon/></motion.a>
