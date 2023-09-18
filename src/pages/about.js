@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Head from 'next/head'
 import profilepic from '../../public/images/profile/developer-pic-2.jpg'
 import { useInView, useMotionValue, useSpring } from 'framer-motion'
+import Skills from '@/Components/Skills'
 
 const AnimatedNumbers = ({value})=>{
   const ref = useRef(null)
@@ -76,6 +77,7 @@ const about = () => {
                 <h2 className=' mt-3 text-xl font-medium capitalize text-dark/75'>projects completed</h2>
               </div>
           </div>
+          <Skills/>
         </Layout>
       </main>
     </>

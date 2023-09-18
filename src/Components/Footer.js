@@ -9,9 +9,9 @@ const Footer = () => {
             <span>{new Date().getFullYear()}&copy;All Rights Reserved!</span>
             <div className='flex items-center'>Build with <span className='text-rose-600 text-3xl px-1'>&hearts;</span>
                 <span>by&nbsp;</span>
-            <Link href={"/"} className='text-sky-900 underline underline-offset-2'>Chow3</Link>
+            <h2 className='text-sky-900'>Chow3</h2>
             </div>
-            <Link href={"/"} target='_blank' className='underline underline-offset-2 font-bold'>Say Hello!</Link>
+            <Link href={"mailto:chowdrisakthivel@gmail.com"} target='_blank' className='underline underline-offset-2 font-bold'>Say Hello!</Link>
         </Layout>
     </footer>
   )

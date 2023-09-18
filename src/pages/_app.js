@@ -1,13 +1,12 @@
 import Footer from '@/Components/Footer'
 import Navbar from '@/Components/Navbar'
 import '@/styles/globals.css'
-import { Montserrat } from 'next/font/google';  // Import Montserrat correctly
+import { Source_Code_Pro } from 'next/font/google'; 
 import Head from 'next/head'
 
-// Generate the Montserrat CSS rule
-const montserrat = Montserrat({
+const source_Code_Pro = Source_Code_Pro({
   subsets: ['latin'],
-  variable: '--font-mont',
+  // variable: '--font-source',
 });
 
 export default function App({ Component, pageProps }) {
@@ -16,17 +15,9 @@ export default function App({ Component, pageProps }) {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        {/* <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" /> */}
       </Head>
-      <style jsx global>
-        {`
-          :root {
-            --font-mont: 'Montserrat', sans-serif;
-          }
-
-          ${montserrat}  /* Apply the generated Montserrat CSS rule */
-        `}
-      </style>
-      <main className={`font-mont bg-light w-full min-h-screen`}>
+      <main className={`bg-light w-full min-h-screen`}>
         <Navbar />
         <Component {...pageProps} />
         <Footer />

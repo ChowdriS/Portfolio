@@ -22,8 +22,8 @@ export default function Home() {
               </div>
               <div className='w-full h-full'>
               <AnimatedText text="Hi I am Chowdri!" className='!text-sky-700 !text-6xl'/>
-              <h1 className='mx-auto py-2 text-4xl font-bold text-dark flex items-center justify-center'>Turning Vision Into Reality With Code</h1>
-              <p>As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. 
+              <h1 className='mx-auto py-2 text-4xl font-bold text-dark flex items-center justify-center '>Turning Vision Into Reality With Code</h1>
+              <p className='text-justify'>As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. 
 Explore my latest projects and articles, showcasing my expertise in React.js and web development.</p>
               <div className='flex items-center self-start mt-2'>
                 <Link href="/chowdri_resume.pdf" target={'_blank'} className='mt-2 flex items-center bg-dark text-light p-2.5 px-6
