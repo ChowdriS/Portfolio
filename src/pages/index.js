@@ -5,6 +5,7 @@ import profilePic from "../../public/images/profile/developer-pic-1.png"
 import AnimatedText from '@/Components/AnimatedText'
 import Link from 'next/link'
 import { LinkArrow } from '@/Components/Icons'
+import Bulb from '../../public/images/svgs/miscellaneous_icons_1.svg'
 
 export default function Home() {
   return (
@@ -38,6 +39,9 @@ Explore my latest projects and articles, showcasing my expertise in React.js and
               </div>
           </div>
         </Layout>
+        <div className='absolute right-8 bottom-8 inline-block w-24'>
+          <Image src={Bulb} alt="bulb" className="w-full h-auto"/>
+        </div>
       </main>
     </>
   )
