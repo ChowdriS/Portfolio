@@ -6,11 +6,12 @@ import Head from 'next/head'
 import profilepic from '../../public/images/profile/developer-pic-2.jpg'
 import { useInView, useMotionValue, useSpring } from 'framer-motion'
 import Skills from '@/Components/Skills'
+import Experience from '@/Components/Experience'
 
 const AnimatedNumbers = ({value})=>{
   const ref = useRef(null)
   const motionValue = useMotionValue(0)
-  const springValue = useSpring(motionValue,{duration:8000})
+  const springValue = useSpring(motionValue,{duration:80000000000000})
   const isInView = useInView(ref);
   useEffect(()=>{
     if(isInView){
@@ -41,8 +42,8 @@ const about = () => {
       </Head>
       <main className='flex w-full flex-col items-center justify-center'>
         <Layout className='pt-16'>
-          <AnimatedText text="Passion Fuels Purpose!" className='mb-7' />
-          <h2 className='uppercase mb-4 text-lg text-dark/75 font-bold'>Biography</h2>
+          <AnimatedText text="Passion Fuels Purpose!" className='mb-16' />
+          <h2 className='uppercase mb-8 text-lg text-dark/75 font-bold'>Biography</h2>
           <div className='grid grid-cols-3 gap-16'>
             <div className='col-span-1 flex flex-col items-start justify-start'>
               <p className='font-medium text-justify'>Hi I&apos;m Chowdri Sakthivel, a lifelong learner with a passion for coding, particularly in C++. 
@@ -78,6 +79,7 @@ const about = () => {
               </div>
           </div>
           <Skills/>
+          <Experience/>
         </Layout>
       </main>
     </>
