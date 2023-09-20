@@ -10,6 +10,7 @@ const Skill = ({name,x,y})=>{
             // transition={{duration:1.5}}
             whileInView={{x:x,y:y}}
             transition={{duration:2.5,type:"spring"}}
+            viewport={{once:true}}
         >
             {name}
         </motion.div>

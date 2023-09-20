@@ -11,7 +11,7 @@ import Experience from '@/Components/Experience'
 const AnimatedNumbers = ({value})=>{
   const ref = useRef(null)
   const motionValue = useMotionValue(0)
-  const springValue = useSpring(motionValue,{duration:80000000000000})
+  const springValue = useSpring(motionValue,{duration:800000000})
   const isInView = useInView(ref);
   useEffect(()=>{
     if(isInView){
