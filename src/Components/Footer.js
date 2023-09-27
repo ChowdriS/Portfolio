@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className='w-full border-t-2 border-solid border-dark font-medium text-lg'>
         <Layout className='py-8 flex items-center justify-between'>
             <span>{new Date().getFullYear()}&copy;All Rights Reserved!</span>
-            <div className='flex items-center'>Build with <span className='text-rose-600 text-3xl px-1'>&hearts;</span>
+            <div className='flex items-center'>Crafted with <span className='text-rose-600 text-3xl px-1'>&hearts;</span>
                 <span>by&nbsp;</span>
             <h2 className='text-sky-900'>Chow3</h2>
             </div>
