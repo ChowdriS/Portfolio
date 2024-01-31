@@ -26,10 +26,9 @@ export default function Home() {
               <p className='text-justify'>As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. 
 Explore my latest projects and articles, showcasing my expertise in React.js and web development.</p>
               <div className='flex items-center self-start mt-2'>
-                <Link href="/chowdri_resume.pdf" target={'_blank'} className='mt-2 flex items-center bg-dark text-light p-2.5 px-6
+                <Link href="/ChowdriSakthivel_Resume.pdf" target={'_blank'} className='mt-2 flex items-center bg-dark text-light p-2.5 px-6
                 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent
                  hover:border-dark hover:font-bold ml-[30%]'
-                 download={true}
                  >
                   Resume<LinkArrow className={`w-6 ml-1`}/></Link>
                 <Link href="mailto:chowdrisakthivel@gmail.com" target={'_blank'}
