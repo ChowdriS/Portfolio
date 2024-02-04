@@ -52,12 +52,10 @@ const Experience = () => {
             <ul className='w-full flex flex-col items-start justify-between ml-4'>
                 <Details company={"Kongu Engineering College"} position={"Student"} address={"Perundurai,Erode"} 
                 companyLink={"www.kongu.ac.in"} time={"2021-2025"} work={"Gain myself more power to lead this world with more confident"}/>
-                <Details company={"Kongu Engineering College"} position={"Student"} address={"Perundurai,Erode"} 
-                companyLink={"www.kongu.ac.in"} time={"2021-2025"} work={"Gain myself more power to lead this world with more confident"}/>
-                <Details company={"Kongu Engineering College"} position={"Student"} address={"Perundurai,Erode"} 
-                companyLink={"www.kongu.ac.in"} time={"2021-2025"} work={"Gain myself more power to lead this world with more confident"}/>
-                <Details company={"Kongu Engineering College"} position={"Student"} address={"Perundurai,Erode"} 
-                companyLink={"www.kongu.ac.in"} time={"2021-2025"} work={"Gain myself more power to lead this world with more confident"}/>
+                <Details company={"KSR Mat Hr Sec School"} position={"Student"} address={"tiruchengodu,Namakal"} 
+                companyLink={"#"} time={"2020-2021"} work={"Gain myself more power to lead this world with more confident"}/>
+                <Details company={"URC Palaniammal Mat Hr Sec School"} position={"Student"} address={"Thindal,Erode"} 
+                companyLink={"#"} time={"2012-2019"} work={"Gain myself more power to lead this world with more confident"}/>
             </ul>
         </div>
     </div>

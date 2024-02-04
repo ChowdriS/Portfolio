@@ -38,7 +38,7 @@ const projects = () => {
       </Head>
       <main className='flex flex-col items-center justify-center w-full mb-16'>
         <Layout className='pt-16'>
-            <AnimatedText text="Imagination Trumps Knowledge!" className='text-5xl mb-8'/>
+            <AnimatedText text="Inspiration Builds Knowledge!" className='text-5xl mb-8'/>
             <div className='grid grid-cols-12 gap-24'>
 
                 <div className='col-span-12'>
