@@ -55,7 +55,7 @@ const projects = () => {
                     github="https://github.com/ChowdriS/E-Commerce-Website"
                     />
                 </div>
-                <h1 className='text-4xl font-bold my-1'>Images</h1>
+                {/* <h1 className='text-4xl font-bold my-1'>Images</h1>
                 <div className=' col-span-12 border border-spacing-2 border-solid rounded-2xl border-black flex justify-around items-center'>
                     <div className=''>
                         <Image src={Acro2} alt="img1" className=' w-full rounded-lg h-auto'/>
@@ -63,7 +63,7 @@ const projects = () => {
                     <div className=''>
                         <Image src={Acro3} alt="img2" className='w-full rounded-lg h-autp'/>
                     </div>
-                </div>
+                </div> */}
                 <div className='col-span-12'>
                     <FeaturedProjet
                     title="Portfolio Application"
