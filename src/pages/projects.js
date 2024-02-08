@@ -5,24 +5,27 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import Acro1 from '../../public/images/projects/Acro/1.png'
+import Acro2 from '../../public/images/projects/Acro/2.png'
+import Acro3 from '../../public/images/projects/Acro/3.png'
 import sample from '../../public/images/projects/sample.png'
 
 
 const FeaturedProjet = ({type,title,summary,img,link,github}) => {
     return (
         <article className='w-full flex items-center justify-between rounded-3xl border border-dark border-solid bg-light shadow-2xl p-4'>
-                <Link href={link} target='_blank' className='w-1/2 cursor-pointer overflow-hidden rounded-lg'>
+                <Link href={github} target='_blank' className='w-1/2 cursor-pointer overflow-hidden rounded-lg'>
                     <Image src={img} alt={title} className='w-full h-auto'/>
                 </Link>
                 <div className='w-1/2 flex flex-col items-start justify-between pl-6'>
                     <span className='font-medium text-sky-700 text-xl'>{type}</span>
-                    <Link href={link} target='_blank' className='hover:underline underline-offset-2'>
-                        <h2 className='my-2 text-left w-full font-bold text-4xl'>{title}</h2>
+                    <Link href={github} target='_blank' className='hover:underline underline-offset-2'>
+                        <h2 className='my-2 text-left w-full font-bold text-3xl'>{title}</h2>
                     </Link>
                     <p className='my-2 text-dark font-medium'>{summary}</p>
                     <div className='flex items-center mt-2'>
-                        <Link href={github} className='w-10'><GithubIcon/></Link>
-                        <h2 className='ml-4 rounded-lg text-light bg-dark p-2 px-6 text-lg font-semibold'>Visit here!</h2>
+                        <Link href={github} className='w-8'><GithubIcon/></Link>
+                        <Link href={github} className='ml-4 rounded-lg text-light bg-dark p-1 px-2 text-lg font-semibold'>Visit here!</Link>
                     </div>
                 </div>
         </article>
@@ -43,30 +46,33 @@ const projects = () => {
 
                 <div className='col-span-12'>
                     <FeaturedProjet
-                    title="ABC Application"
-                    summary="A professional portfolio website using nextJS, Framer-motion, and Styled-components. It has smooth 
-                    page transitions, cool background effects, unique design and it is mobile responsive."
-                    type="Featured Projects"
-                    img={sample}
-                    link="/"
-                    github="/"
+                    title="Acro - Ecommerce Application"
+                    summary="A modern e-commerce platform for electronic items, facilitating buying and selling,
+                    boasting a sleek UI design. Developed using HTML, CSS, PHP, and MySQL, it offers
+                    seamless user-friendly navigation, and robust intractions for efficient operations"
+                    img={Acro1}
+                    link="https://github.com/ChowdriS/E-Commerce-Website"
+                    github="https://github.com/ChowdriS/E-Commerce-Website"
                     />
                 </div>
-                <div className='col-span-6'>
-                    Project-1
-                </div>
-                <div className='col-span-6'>
-                    Project-2
+                <h1 className='text-4xl font-bold my-1'>Images</h1>
+                <div className=' col-span-12 border border-spacing-2 border-solid rounded-2xl border-black flex justify-around items-center'>
+                    <div className=''>
+                        <Image src={Acro2} alt="img1" className=' w-full rounded-lg h-auto'/>
+                    </div>
+                    <div className=''>
+                        <Image src={Acro3} alt="img2" className='w-full rounded-lg h-autp'/>
+                    </div>
                 </div>
                 <div className='col-span-12'>
                     <FeaturedProjet
-                    title="ABC Application"
+                    title="Portfolio Application"
                     summary="A professional portfolio website using NextJS, Framer-motion, and Styled-components. It has smooth 
                     page transitions, cool background effects, unique design and it is mobile responsive."
                     type="Featured Projects"
                     img={sample}
                     link="/"
-                    github="/"
+                    github="https://github.com/ChowdriS/Portfolio"
                     />
                 </div>
                 <div className='col-span-6'>
