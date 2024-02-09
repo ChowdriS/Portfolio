@@ -75,12 +75,12 @@ const projects = () => {
                     github="https://github.com/ChowdriS/Portfolio"
                     />
                 </div>
-                <div className='col-span-6'>
+                {/* <div className='col-span-6'>
                     Project-1
                 </div>
                 <div className='col-span-6'>
                     Project-2
-                </div>
+                </div> */}
 
             </div>
         </Layout>
