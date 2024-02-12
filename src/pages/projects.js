@@ -55,7 +55,7 @@ const projects = () => {
                     <FeaturedProjet
                     title="Promptify - A Blog Application"
                     summary="Promptify is a blog application where you can share AI prompts easily. 
-                    Built with Clerk API, Next.js, Tailwind, and MongoDB, it offers a user-friendly platform for posting and exploring prompts.
+                    Built with NextAuth, Next.js, Tailwind, and MongoDB, it offers a user-friendly platform for posting and exploring prompts.
                     With Promptify, users can create and discover AI-generated ideas effortlessly. 
                     Experience a seamless journey into the world of AI prompts with Promptify"
                     img={promptify}
