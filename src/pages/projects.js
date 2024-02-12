@@ -6,8 +6,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import Acro1 from '../../public/images/projects/Acro/1.png'
-import Acro2 from '../../public/images/projects/Acro/2.png'
-import Acro3 from '../../public/images/projects/Acro/3.png'
+// import Acro2 from '../../public/images/projects/Acro/2.png'
+// import Acro3 from '../../public/images/projects/Acro/3.png'
 import sample from '../../public/images/projects/sample.png'
 
 
@@ -25,7 +25,11 @@ const FeaturedProjet = ({type,title,summary,img,link,github}) => {
                     <p className='my-2 text-dark font-medium'>{summary}</p>
                     <div className='flex items-center mt-2'>
                         <Link href={github} className='w-8'><GithubIcon/></Link>
-                        <Link href={github} className='ml-4 rounded-lg text-light bg-dark p-1 px-2 text-lg font-semibold'>Visit here!</Link>
+                        <Link href={github} className='ml-4 rounded-lg text-light bg-dark p-1 px-2 text-lg font-semibold 
+                         hover:bg-light hover:text-dark border-2 border-solid border-transparent
+                         hover:border-dark hover:font-bold'>
+                            Visit here!
+                        </Link>
                     </div>
                 </div>
         </article>
@@ -46,10 +50,36 @@ const projects = () => {
 
                 <div className='col-span-12'>
                     <FeaturedProjet
+                    title="Herio - A Music Player Application"
+                    summary="Promptify is a blog application where you can share AI prompts easily. 
+                    Built with Clerk API, Next.js, Tailwind, and MongoDB, it offers a user-friendly platform for posting and exploring prompts.
+                    With Promptify, users can create and discover AI-generated ideas effortlessly. 
+                    Experience a seamless journey into the world of AI prompts with Promptify"
+                    img={sample}
+                    link="https://github.com/ChowdriS/Promptify"
+                    github="https://github.com/ChowdriS/Promptify"
+                    />
+                </div>
+
+                <div className='col-span-12'>
+                    <FeaturedProjet
+                    title="Promptify - A Blog Application"
+                    summary="Promptify is a blog application where you can share AI prompts easily. 
+                    Built with Clerk API, Next.js, Tailwind, and MongoDB, it offers a user-friendly platform for posting and exploring prompts.
+                    With Promptify, users can create and discover AI-generated ideas effortlessly. 
+                    Experience a seamless journey into the world of AI prompts with Promptify"
+                    img={sample}
+                    link="https://github.com/ChowdriS/Promptify"
+                    github="https://github.com/ChowdriS/Promptify"
+                    />
+                </div>
+                
+                <div className='col-span-12'>
+                    <FeaturedProjet
                     title="Acro - Ecommerce Application"
-                    summary="A modern e-commerce platform for electronic items, facilitating buying and selling,
+                    summary="A E-commerce platform for electronic items, facilitating buying and selling,
                     boasting a sleek UI design. Developed using HTML, CSS, PHP, and MySQL, it offers
-                    seamless user-friendly navigation, and robust intractions for efficient operations"
+                    user-friendly navigation, and robust intractions for efficient operations"
                     img={Acro1}
                     link="https://github.com/ChowdriS/E-Commerce-Website"
                     github="https://github.com/ChowdriS/E-Commerce-Website"

@@ -21,7 +21,7 @@ export default function Home() {
                 <Image src={profilePic} alt='Chowdri' className='w-full h-auto'/>
               </div>
               <div className='w-full h-full'>
-              <AnimatedText text="Hi I am Chowdri!" className='!text-sky-700 !text-6xl'/>
+              <AnimatedText text="Hi I am Chowdri!" className=' !text-6xl'/>
               <h1 className='mx-auto py-2 text-4xl font-bold text-dark flex items-center justify-center '>Turning Vision Into Reality With Code</h1>
               <p className='text-justify'>As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. 
 Explore my latest projects and articles, showcasing my expertise in React.js and web development.</p>
