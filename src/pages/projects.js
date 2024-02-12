@@ -9,6 +9,8 @@ import Acro1 from '../../public/images/projects/Acro/1.png'
 // import Acro2 from '../../public/images/projects/Acro/2.png'
 // import Acro3 from '../../public/images/projects/Acro/3.png'
 import sample from '../../public/images/projects/sample.png'
+import promptify from '../../public/images/projects/promptify.png'
+import synconvo from '../../public/images/projects/synconvo.png'
 
 
 const FeaturedProjet = ({type,title,summary,img,link,github}) => {
@@ -48,18 +50,6 @@ const projects = () => {
             <AnimatedText text="Inspiration Builds Knowledge!" className='text-5xl mb-8'/>
             <div className='grid grid-cols-12 gap-24'>
 
-                <div className='col-span-12'>
-                    <FeaturedProjet
-                    title="Herio - A Music Player Application"
-                    summary="Promptify is a blog application where you can share AI prompts easily. 
-                    Built with Clerk API, Next.js, Tailwind, and MongoDB, it offers a user-friendly platform for posting and exploring prompts.
-                    With Promptify, users can create and discover AI-generated ideas effortlessly. 
-                    Experience a seamless journey into the world of AI prompts with Promptify"
-                    img={sample}
-                    link="https://github.com/ChowdriS/Promptify"
-                    github="https://github.com/ChowdriS/Promptify"
-                    />
-                </div>
 
                 <div className='col-span-12'>
                     <FeaturedProjet
@@ -68,12 +58,24 @@ const projects = () => {
                     Built with Clerk API, Next.js, Tailwind, and MongoDB, it offers a user-friendly platform for posting and exploring prompts.
                     With Promptify, users can create and discover AI-generated ideas effortlessly. 
                     Experience a seamless journey into the world of AI prompts with Promptify"
-                    img={sample}
-                    link="https://github.com/ChowdriS/Promptify"
+                    img={promptify}
+                    link="https://promptify-chowdris.vercel.app/"
                     github="https://github.com/ChowdriS/Promptify"
                     />
                 </div>
                 
+                <div className='col-span-12'>
+                    <FeaturedProjet
+                    title="SynConvo - A ChatBot Application"
+                    summary="SynConvo is a chatbot app created using FastApi,OpenAI API and Python.
+                     It features a speech recognition system that converts speech to text.The chatbot is built by integrating 
+                     with the ChatGPT API,providing a seamless conversational experience."
+                    img={synconvo}
+                    link="https://github.com/Aswinsrini/SyncConvo-react"
+                    github="https://github.com/Aswinsrini/SyncConvo-react"
+                    />
+                </div>
+
                 <div className='col-span-12'>
                     <FeaturedProjet
                     title="Acro - Ecommerce Application"
