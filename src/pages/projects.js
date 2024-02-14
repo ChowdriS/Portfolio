@@ -57,8 +57,7 @@ const projects = () => {
                     summary="Promptify is a blog application where you can share AI prompts easily. 
                     Built with NextAuth, Next.js, Tailwind, and MongoDB, it offers a user-friendly 
                     platform for posting and exploring prompts."
-                    img={promptify}
-                    link="https://promptify-chowdris.vercel.app/"
+                    img={promptify} link="https://promptify-chowdris.vercel.app/"
                     github="https://github.com/ChowdriS/Promptify"
                     />
                 </div>
