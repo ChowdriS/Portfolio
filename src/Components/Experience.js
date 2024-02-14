@@ -18,12 +18,12 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
                 <h3 className='capitalize font-bold text-2xl' style={{ whiteSpace: 'nowrap' }}>
                     {position}&nbsp;<a
                         href={companyLink}
-                        className='text-sky-700 capitalize'
+                        className='text-sky-700 dark:text-primaryDark capitalize'
                     >
                         -{company}
                     </a>
                 </h3>
-                <span className='capitalize font-medium text-dark/75'>
+                <span className='capitalize font-medium text-dark/75 dark:text-light/75'>
                     {time} | {address}
                 </span>
                 <p className='font-medium w-full'>{work}</p>
@@ -40,14 +40,14 @@ const Experience = () => {
         offset:['start end',"center start"]
     })
   return (
-    <div className=' w-full mt-32 flex items-center justify-center'>
+    <div className=' w-full mt-32 flex items-center justify-center dark:text-light'>
         <h2 className='font-bold text-8xl mx-8 mb-32 text-center'>
         My Journey
         </h2>
         <div ref={ref} className='w-full mx-auto relative'>
 
             <motion.div  style={{scaleY:scrollYProgress}}
-            className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top'></motion.div>
+            className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light'></motion.div>
 
             <ul className='w-full flex flex-col items-start justify-between ml-4'>
                 <Details company={"Kongu Engineering College"} position={"Student"} address={"Perundurai,Erode"} 

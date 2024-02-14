@@ -14,7 +14,7 @@ export default function Home() {
         <title>Chowdri Sakthivel</title>
         <meta name="portfolio" content="description" />
       </Head>
-      <main className='flex items-center justify-center text-dark w-full min-h-screen'>
+      <main className='flex items-center justify-center text-dark dark:text-light w-full min-h-screen'>
         <Layout className='pt-0'>
           <div className='flex items-center justify-between w-full'>
               <div className='w-1/2'>
@@ -22,17 +22,17 @@ export default function Home() {
               </div>
               <div className='w-full h-full'>
               <AnimatedText text="Hi I am Chowdri!" className=' !text-6xl'/>
-              <h1 className='mx-auto py-2 text-4xl font-bold text-dark flex items-center justify-center '>Turning Vision Into Reality With Code</h1>
+              <h1 className='mx-auto py-2 text-4xl font-bold text-dark dark:text-light/90 flex items-center justify-center '>Turning Vision Into Reality With Code</h1>
               <p className='text-justify'>As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. 
 Explore my latest projects and articles, showcasing my expertise in React.js and web development.</p>
               <div className='flex items-center self-start mt-2'>
                 <Link href="/ChowdriSakthivel_Resume.pdf" target={'_blank'} className='mt-2 flex items-center bg-dark text-light p-2.5 px-6
                 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent
-                 hover:border-dark hover:font-bold ml-[30%]'
+                 hover:border-dark hover:font-bold ml-[30%] dark:text-light dark:hover:text-dark dark:border-light dark:hover:bg-light '
                  >
                   Resume<LinkArrow className={`w-6 ml-1`}/></Link>
                 <Link href="mailto:chowdrisakthivel@gmail.com" target={'_blank'}
-                className='font-medium ml-4 text-dark underline text-xl capitalize'>
+                className='font-medium ml-4 text-dark dark:text-light underline text-xl capitalize'>
                   Contact</Link>
               </div>
               </div>

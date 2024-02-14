@@ -40,7 +40,7 @@ const about = () => {
         <title>Chowdri Sakthivel</title>
         <meta name="portfolio" content="description" />
       </Head>
-      <main className='flex w-full flex-col items-center justify-center'>
+      <main className='flex w-full flex-col items-center justify-center dark:text-light'>
         <Layout className='pt-16'>
           <AnimatedText text="Passion Fuels Purpose!" className='mb-16' />
           <h2 className='uppercase mb-8 text-lg text-dark/75 font-bold'>Biography</h2>
@@ -64,7 +64,7 @@ const about = () => {
           <div className='flex items-center justify-evenly mt-3'>
               <div className='flex flex-col items-end justify-center'>
                 <span className='inline-block text-7xl font-bold'>3+</span>
-                <h2 className='mt-3 text-xl font-medium capitalize text-dark/75'>years of experience</h2>
+                <h2 className='mt-3 text-xl font-medium capitalize text-dark/75 dark:text-light'>years of experience</h2>
               </div>
             <div className='relative rounded-2xl border-2 border-solid border-dark bg-light p-4 mt-4'>
               <div className='top-0 -right-3 -z-10 w-{102%} h-{103%} rounded-{2rem} bg-dark'>
@@ -75,7 +75,7 @@ const about = () => {
                 <span className='inline-block text-7xl font-bold'>
                 <AnimatedNumbers value={10} />+
                 </span>
-                <h2 className=' mt-3 text-xl font-medium capitalize text-dark/75'>projects completed</h2>
+                <h2 className=' mt-3 text-xl font-medium capitalize text-dark/75 dark:text-light'>projects completed</h2>
               </div>
           </div>
           <Skills/>

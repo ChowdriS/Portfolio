@@ -15,21 +15,21 @@ import synconvo from '../../public/images/projects/synconvo.png'
 
 const FeaturedProjet = ({type,title,summary,img,link,github}) => {
     return (
-        <article className='w-full flex items-center justify-between rounded-3xl border border-dark border-solid bg-light shadow-2xl p-4'>
+        <article className='w-full flex items-center justify-between rounded-3xl border border-dark border-solid bg-light  dark:bg-dark dark:text-light dark:border-light shadow-2xl p-4'>
                 <Link href={github} target='_blank' className='w-1/2 cursor-pointer overflow-hidden rounded-lg'>
                     <Image src={img} alt={title} className='w-full h-auto'/>
                 </Link>
                 <div className='w-1/2 flex flex-col items-start justify-between pl-6'>
-                    <span className='font-medium text-sky-700 text-xl'>{type}</span>
+                    <span className='font-medium text-sky-700 dark:text-primaryDark text-xl'>{type}</span>
                     <Link href={github} target='_blank' className='hover:underline underline-offset-2'>
-                        <h2 className='my-2 text-left w-full font-bold text-3xl'>{title}</h2>
+                        <h2 className='my-2 text-left w-full font-bold text-3xl dark:text-light'>{title}</h2>
                     </Link>
-                    <p className='my-2 text-dark font-medium'>{summary}</p>
+                    <p className='my-2 text-dark font-medium dark:text-light/75'>{summary}</p>
                     <div className='flex items-center mt-2'>
                         <Link href={github} className='w-8'><GithubIcon/></Link>
                         <Link href={github} className='ml-4 rounded-lg text-light bg-dark p-1 px-2 text-lg font-semibold 
                          hover:bg-light hover:text-dark border-2 border-solid border-transparent
-                         hover:border-dark hover:font-bold'>
+                         hover:border-dark hover:font-bold dark:text-dark dark:bg-light dark:border-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light'>
                             Visit here!
                         </Link>
                     </div>
