@@ -33,7 +33,7 @@ Explore my latest projects and articles, showcasing my expertise in React.js and
                   Resume<LinkArrow className={`w-6 ml-1`}/></Link>
                 <Link href="mailto:chowdrisakthivel@gmail.com" target={'_blank'}
                 className='font-medium ml-4 text-dark dark:text-light underline text-xl capitalize'>
-                  Contact</Link>
+                  Say Hello!</Link>
               </div>
               </div>
           </div>

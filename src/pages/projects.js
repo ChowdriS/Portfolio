@@ -10,6 +10,7 @@ import Acro1 from '../../public/images/projects/Acro/1.png'
 // import Acro3 from '../../public/images/projects/Acro/3.png'
 import sample from '../../public/images/projects/sample.png'
 import promptify from '../../public/images/projects/promptify.png'
+import herio from '../../public/images/projects/herio.png'
 import synconvo from '../../public/images/projects/synconvo.png'
 
 
@@ -66,11 +67,23 @@ const projects = () => {
                     <FeaturedProjet
                     title="SynConvo - A ChatBot Application"
                     summary="SynConvo is a chatbot app created using FastApi,OpenAI API and Python.
-                     It features a speech recognition system that converts speech to text.The chatbot is built by integrating 
-                     with the ChatGPT API,providing a seamless conversational experience."
+                     It features a speech recognition system that converts speech to text.The chatbot is 
+                     built by integrating with the ChatGPT API,providing a seamless conversational experience."
                     img={synconvo}
                     link="https://github.com/Aswinsrini/SyncConvo-react"
                     github="https://github.com/Aswinsrini/SyncConvo-react"
+                    />
+                </div>
+
+                <div className='col-span-12'>
+                    <FeaturedProjet
+                    title="Herio - A Music Player"
+                    summary="Herio is a music player app created using Next.js,
+                     Tailwind CSS, and the Spotify API. It lets you listen to music easily and enjoyably. 
+                     With its cool design and useful features, Herio makes listening to music more fun."
+                    img={herio}
+                    link="https://herio.vercel.app/"
+                    github="https://github.com/ChowdriS/herio"
                     />
                 </div>
 
